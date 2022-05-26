@@ -28,9 +28,10 @@ const listToDo = new Vue({
     methods : {
         addTask(){
             // creazine del nuovo oggetto
-            const task = new Object();
-            task.text = this.newTask;
-            task.done = true;
+            const task = {
+                text : this.newTask,
+                done : false
+            }
             // stampa solo se l'input non è vuoto
             if(this.newTask !== ""){
                 this.toDo.push(task);
