@@ -40,7 +40,13 @@ const listToDo = new Vue({
         removeTask(task){
             this.toDo.splice(task, 1);
         },  
-
+        changeState(index){
+            if(index.done === false){
+                index.done = true;
+            } else {
+                index.done = false;
+            }
+        },
     }
     
 });
