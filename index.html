@@ -24,7 +24,7 @@
                 <!-- stampa dinamica oggetti dall'array -->
                 <li v-for="(task, i) in toDo" :key="i">
                     {{task.text}}
-                    <i :class="task.done === true ? 'fas fa-check' : 'fas fa-times' "></i>
+                    <i :style="task.done === true ? 'color: green' : 'color: red' " :class="task.done === true ? 'fas fa-check' : 'fas fa-times' "></i>
                     <i @click="removeTask(i)" class="fas fa-times"></i>
                 </li>
                 

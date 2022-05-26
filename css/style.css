@@ -15,6 +15,8 @@ body {
 
 
 ul {
+    width: 50%;
+    margin: 0 auto;
     padding: 50px 20px;
     list-style-type: none;
     font-size: 20px;
@@ -24,6 +26,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 #list-toDo{
