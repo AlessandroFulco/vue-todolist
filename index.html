@@ -22,9 +22,9 @@
             <button @click="addTask">Aggiungi</button>
             <ul>
                 <!-- stampa dinamica oggetti dall'array -->
-                <li @click="changeState(task)" v-for="(task, i) in toDo" :key="i">
+                <li :style="task.done === true ? 'text-decoration: line-through' : ' ' " @click="changeState(task)" v-for="(task, i) in toDo" :key="i">
                     {{task.text}}
-                    <i :style="task.done === true ? 'color: green' : 'color: red' " :class="task.done === true ? 'fas fa-check' : 'fas fa-times' "></i>
+                    <i :style="task.done === true ? 'color: green;' : 'color: red;' " :class="task.done === true ? 'fas fa-check' : 'fas fa-times' "></i>
                     <i @click="removeTask(i)" class="fas fa-times"></i>
                 </li>
             </ul>
