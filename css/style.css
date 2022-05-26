@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+}
+.container{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+ul {
+    padding: 50px 20px;
+    list-style-type: none;
+    font-size: 20px;
+}
+ul li{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#list-toDo{
+    width: 100%;
+    background-color: #888;
+    border-radius: 10px;
+}
