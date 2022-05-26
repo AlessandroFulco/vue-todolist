@@ -41,10 +41,6 @@ const listToDo = new Vue({
             this.toDo.splice(task, 1);
         },  
 
-        log(){
-            console.log(this.newTask);
-        
-        }   
     }
     
 });
